@@ -16,7 +16,7 @@ Claude talks to it over stdio, gets a UUID, done.
 ### Option 1: Install globally (simple, persistent)
 
 ```bash
-npm install -g uuid-mcp
+npm install -g @abhishekrj02/uuid-mcp
 ```
 
 Verify it works:
@@ -29,15 +29,6 @@ You should see:
 UUID Generator MCP Server running on stdio
 ```
 
-If you don’t, stop. Your install is broken.
-
-### Option 2: Use with `npx` (no global install)
-
-```bash
-npx uuid-mcp
-```
-
-Same behavior. Zero commitment.
 
 ## Claude Code setup
 
@@ -109,28 +100,9 @@ Add this:
 
 Restart Claude Desktop after saving.
 
-## Usage in Claude
+### Example Usage
+Once configured, just ask Claude: *Generate a UUID*
 
-Once configured, ask Claude: *Generate a UUID*
-
-Claude will:
-
-  1. Call the generate_uuid MCP tool
-
-  2. Receive a UUID
-
-  3. Return it to you
-
-Exposed tools: `generate_uuid`
-
-Generates a random UUID using Node.js crypto.
-
-Output:
-```bash
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-```
-
-That’s it. No metadata spam.
 
 ## Development
 
