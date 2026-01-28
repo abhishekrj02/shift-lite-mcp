@@ -31,7 +31,7 @@ Shift-lite MCP Server running on stdio
 
 Claude Code does not auto-discover MCP servers. You must register it manually.
 
-### Install the Package
+### Install the Package (if not already)
 You can use this package without installing it globally by using npx, or install it globally for faster access.
 
 ```bash
@@ -42,12 +42,12 @@ npm install -g @abhishekrj02/shift-lite-mcp
 
 For Windows Users
 ```bash
-claude mcp add shift-lite-mcp -- cmd /c npx -y @abhishekrj02/shift-lite-mcp
+claude mcp add --scope user shift-lite-mcp -- cmd /c npx -y @abhishekrj02/shift-lite-mcp
 ```
 
 For macOS/Linux Users
 ```bash
-claude mcp add shift-lite-mcp -- npx -y @abhishekrj02/shift-lite-mcp
+claude mcp add --scope user shift-lite-mcp -- npx -y @abhishekrj02/shift-lite-mcp
 ```
 
 ### Verify Installation
